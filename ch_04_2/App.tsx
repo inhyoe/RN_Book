@@ -1,5 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { Dimensions, SafeAreaView, ScrollView, StyleSheet } from "react-native";
+import {
+  Dimensions,
+  FlatList,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+} from "react-native";
 import Cache from "./src/screens/Cache";
 import Memo from "./src/screens/Memo";
 import Fibo from "./src/screens/Fibo";
@@ -9,11 +15,11 @@ export default function App() {
   return (
     <SafeAreaView>
       <ScrollView
-        horizontal
+        horizontal={true}
         contentContainerStyle={[styles.contentContainerStyle]}
       >
-        <Cache />
-        <Memo />
+        {/* <Cache /> */}
+        {/* <Memo /> */}
         <Fibo />
       </ScrollView>
     </SafeAreaView>
